@@ -111,3 +111,6 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
   .letter-table{font-size:14px;min-width:24rem}
   .letter-table th,.letter-table td{padding:6px 8px}
 }
+
+/* watch-on-youtube links under video embeds */
+.watch-yt{margin:var(--s1) 0 0;font-size:15px;font-weight:600}
