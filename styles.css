@@ -7,7 +7,8 @@
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.65;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
-img,iframe{max-width:100%}
+img{max-width:100%;height:auto}
+iframe{max-width:100%}
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{color:var(--navy)}
 h1,h2,h3{font-family:var(--serif);color:var(--navy);font-weight:600;line-height:1.2;letter-spacing:-.01em;margin:0 0 var(--s2)}
@@ -89,4 +90,23 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
   .site-nav a{font-size:14px}
   .section{padding:var(--s4) 0}
   .section-rule .container{padding-top:var(--s4)}
+}
+
+/* weekly letter issue */
+.letter-masthead{display:block;width:100%;max-width:100%;height:auto;background:var(--navy);margin:0 0 var(--s3)}
+.letter-byline{color:var(--muted);font-size:15px;margin:0 0 var(--s3)}
+.letter-toc{margin:0 0 var(--s4)}
+.letter-toc ul{margin:0;padding-left:1.25rem}
+.letter-issue .caption{font-size:15px;color:var(--muted);margin:0 0 var(--s2)}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 var(--s3);max-width:100%}
+.letter-table{width:100%;border-collapse:collapse;font-size:15px;margin:0;min-width:28rem}
+.letter-table th,.letter-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.letter-table th{background:var(--tint);font-weight:600;color:var(--navy)}
+.letter-table .num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.letter-issue hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0}
+.letter-issue .callout{margin:var(--s3) 0}
+.letter-issue .callout p:last-child{margin-bottom:0}
+@media (max-width:520px){
+  .letter-table{font-size:14px;min-width:24rem}
+  .letter-table th,.letter-table td{padding:6px 8px}
 }

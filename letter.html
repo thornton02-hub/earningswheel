@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Earnings Wheel | The Letter</title>
-<meta name="description" content="The Earnings Wheel weekly letter: free options income ideas around earnings, with the risk and my positions disclosed.">
+<title>The Earnings Wheel | The Letter — November 10, 2026</title>
+<meta name="description" content="First issue of The Earnings Wheel for Tuesday, Nov 10, 2026: this week's inflation and earnings calendar, issuer context for CoreWeave, Cisco, and Applied Materials, and educational paper-trade setups. By Chuck Thornton.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1f3a'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23ffffff' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%231f7a5a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,23 +21,96 @@
 <main>
 <section class="page-head">
   <div class="container prose">
-    <h1>The weekly letter</h1>
-    <p class="lede">One email a week, always free. The first issue is coming soon.</p>
+    <p class="eyebrow">The weekly letter</p>
+    <h1>The Earnings Wheel — November 10, 2026</h1>
   </div>
 </section>
 <section class="section">
-  <div class="container prose">
-    <h2>What each issue covers</h2>
-    <dl class="defs">
-      <dt>A note from me</dt><dd>What the market did and what I'm watching.</dd>
-      <dt>Earnings on the radar</dt><dd>Companies reporting soon, and why they're on my list.</dd>
-      <dt>This week's ideas</dt><dd>A few cash-secured puts or covered calls, with the strike, expiration, premium, breakeven, the case for the trade, and what could go wrong.</dd>
-      <dt>My position</dt><dd>For every idea, I tell you whether I own it or have the trade on.</dd>
-      <dt>Last week's scorecard</dt><dd>How every idea played out, good or bad.</dd>
-      <dt>One lesson</dt><dd>A single concept explained in plain English.</dd>
-    </dl>
-    <p class="note">Until the first issue goes out, new lessons are on <a href="https://www.youtube.com/@EarningsWheel" target="_blank" rel="noopener">The Earnings Wheel YouTube channel</a>.</p>
-    <p class="fine">Everything in the letter is general education, not a recommendation to buy or sell anything. Options carry real risk, including assignment and losses larger than the premium you collect. <a href="disclaimers.html">Full disclaimer</a></p>
+  <div class="container prose letter-issue">
+    <img class="letter-masthead" src="images/earningswheel_lockup_horizontal_3000_background.png" width="3000" height="722" alt="The Earnings Wheel horizontal navy masthead with wheel icon">
+    <p class="letter-byline">The Earnings Wheel · EarningsWheel.com · Chuck Thornton · Prepared Monday evening, Nov 9, 2026, for the Tuesday, Nov 10 issue. Educational letter. Not a trade recommendation.</p>
+    <nav class="letter-toc" aria-label="Contents">
+      <ul>
+        <li><a href="#opening">Start with the calendar</a></li>
+        <li><a href="#calendar">This week's calendar (Central Time)</a></li>
+        <li><a href="#closes">Monday's closes</a></li>
+        <li><a href="#crwv">CoreWeave reports Tuesday</a></li>
+        <li><a href="#csco">Cisco Thursday: guidance and paper-trade setups</a></li>
+        <li><a href="#amat">Applied Materials Thursday</a></li>
+        <li><a href="#risk-rule">One risk rule</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="opening">Start with the calendar</h2>
+    <p>Good morning. Before any put, covered call, or wheel discussion, look at the week. Inflation prints and earnings releases change option prices through implied volatility. If you skip the calendar, you leave those changes out of the decision.</p>
+    <p>This letter is education from EarningsWheel.com. The goal is clear decisions and clear risks. No promised income. When a premium is shown as a paper-trade illustration, it is labeled that way and is not a fill. When a bid and ask come from a public chain, they are delayed quotes, not an order ticket.</p>
+
+    <h2 id="calendar">This week's calendar (Central Time)</h2>
+    <p class="caption">Eastern release times converted to America/Chicago. Stocks usually trade on Veterans Day; the bond market is typically closed.</p>
+    <div class="table-wrap">
+    <table class="letter-table">
+      <thead><tr><th>When (CT)</th><th>Event</th></tr></thead>
+      <tbody>
+        <tr><td>Tue Nov 10, 7:30 AM</td><td>BLS CPI and Real Earnings (October 2026)</td></tr>
+        <tr><td>Tue Nov 10, call 4:00 PM</td><td>CoreWeave (CRWV) Q3 earnings call</td></tr>
+        <tr><td>Wed Nov 11</td><td>Veterans Day (BLS holiday mark)</td></tr>
+        <tr><td>Thu Nov 12, before open / call 7:00 AM</td><td>Nebius (NBIS) Q3 results and call</td></tr>
+        <tr><td>Thu Nov 12, call 3:30 PM</td><td>Applied Materials (AMAT) fiscal Q4 earnings call</td></tr>
+        <tr><td>Thu Nov 12, after close / call 3:30 PM</td><td>Cisco (CSCO) Q1 FY2027 results and call</td></tr>
+        <tr><td>Fri Nov 13, 7:30 AM</td><td>BLS PPI (October 2026)</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Treat the table as a watch list. A reporting date tells you when uncertainty lands. It does not tell you which strike to sell.</p>
+
+    <h2 id="closes">Monday's closes</h2>
+    <p>Prices below are regular-session closes on Monday, Nov 9, 2026, from Yahoo Finance pages opened for this letter. They are not Tuesday opening prints and are not executable tickets for Tuesday morning.</p>
+    <div class="table-wrap">
+    <table class="letter-table">
+      <thead><tr><th>Ticker</th><th class="num">Nov 9 close</th><th class="num">Day change</th></tr></thead>
+      <tbody>
+        <tr><td>CSCO</td><td class="num">$98.65</td><td class="num">+$4.80 (+5.11%)</td></tr>
+        <tr><td>AMAT</td><td class="num">$370.55</td><td class="num">+$37.84 (+11.37%)</td></tr>
+        <tr><td>CRWV</td><td class="num">$48.98</td><td class="num">+$2.58 (+5.56%)</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2 id="crwv">CoreWeave reports Tuesday</h2>
+    <p>CoreWeave's investor-relations release sets the Q3 2026 conference call for Tuesday, Nov 10, 2026, at 5:00 p.m. Eastern (4:00 p.m. Central), with a webcast at investors.coreweave.com. For option sellers, the practical point is simple: short-dated premium can look rich into an AI-infrastructure print, and the gap after the call can be large in either direction.</p>
+    <p>Paper-trade approach for CRWV, without quoting a live chain: if you are willing to own 100 shares, define the cash-secured put strike first, then size the cash so one assignment does not break the plan. If you already own shares and want to sell a covered call, choose a strike you can live with if the shares are called away. No live option-chain pricing is quoted here for CRWV; check your broker for executable prices.</p>
+
+    <h2 id="csco">Cisco Thursday: guidance and paper-trade setups</h2>
+    <p>Cisco's IR release schedules Q1 FY2027 results after the close on Thursday, Nov 12, with the call at 1:30 p.m. Pacific / 4:30 p.m. Eastern (3:30 p.m. Central). In its Aug 12, 2026 Q4 FY2026 earnings release, Cisco guided Q1 FY2027 revenue to $18.0–$18.2 billion, GAAP EPS to $1.08–$1.10, and non-GAAP EPS to $1.32–$1.34. Those are the company's published ranges to measure Thursday against—not street consensus invented here.</p>
+    <p>Delayed Yahoo Finance option chain for CSCO, as of the Nov 9 evening page for the Friday Nov 13, 2026 weekly expiration (contract root CSCO261113), with the stock at the $98.65 close:</p>
+    <div class="table-wrap">
+    <table class="letter-table">
+      <thead><tr><th>Contract</th><th class="num">Bid</th><th class="num">Ask</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Nov 13 $95 put</td><td class="num">$2.22</td><td class="num">$2.88</td><td>Delayed chain quote</td></tr>
+        <tr><td>Nov 13 $100 call</td><td class="num">$3.65</td><td class="num">$4.00</td><td>Delayed chain quote</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Paper-trade cash-secured put (educational only, not a fill): sell one Nov 13 $95 put. Cash to secure is $9,500. Using a midpoint illustration of $2.55 between the $2.22–$2.88 bid-ask, premium would be $255, or 2.68% of the $9,500 cash for the short holding period before fees. Breakeven if assigned would be $92.45. If the stock went to zero after assignment, the loss would be about $9,245 after that premium. Assignment can occur at expiration; early assignment is also possible. Simplified math excludes commissions, fees, taxes, and price improvement.</p>
+    <p>Paper-trade covered call (educational only): if you already owned 100 shares near the $98.65 close ($9,865 stock cost), selling the Nov 13 $100 call at a midpoint illustration of $3.825 between the $3.65–$4.00 bid-ask would collect about $383, or 3.88% of that stock cost for the holding period before fees. Breakeven on the shares after the premium would be about $94.83. Upside is capped near $100 plus the premium if called away. These percentages are not annualized.</p>
+    <aside class="callout">
+      <p><strong>Hypothetical arithmetic only</strong></p>
+      <p>The midpoints above are arithmetic between published bid and ask. They are not an executed trade, not Chuck's order, and not a promise the midpoint was available. Use your broker's live chain before acting.</p>
+    </aside>
+
+    <h2 id="amat">Applied Materials Thursday</h2>
+    <p>Applied Materials schedules its fiscal Q4 2026 earnings call for Thursday, Nov 12, at 4:30 p.m. Eastern (3:30 p.m. Central). In its Aug 13, 2026 Q3 release, Applied guided Q4 FY2026 total revenue to about $10.25 billion ± $500 million and non-GAAP diluted EPS to about $4.02 ± $0.20. That is the published bar for Thursday's report.</p>
+    <p>AMAT closed Monday at $370.55 on Yahoo Finance after an 11.37% session. For option sellers into the print: define whether you want stock ownership risk first. A cash-secured put only fits if you will buy 100 shares at the strike with cash already set aside. A covered call only fits if you accept capped upside. No live option-chain pricing is quoted here for AMAT; check your broker for executable prices.</p>
+
+    <h2 id="risk-rule">One risk rule</h2>
+    <p>Never sell a cash-secured put unless you are ready to own 100 shares at the strike with the cash already reserved. On an inflation and earnings week, assume gaps can be larger than quiet sessions. If one assignment would force you to scramble, the put is too big.</p>
+
+    <hr>
+
+    <h2 id="disclaimer">Disclaimer</h2>
+    <p>The Earnings Wheel is educational content from EarningsWheel.com by Chuck Thornton. It is not individualized investment advice, not a solicitation, and not a recommendation to buy or sell any security or option. Options involve substantial risk and are not suitable for everyone. Past results do not guarantee future outcomes. Verify every date on the issuer's investor-relations page and every premium on your own broker's live chain before you act. Chuck Thornton and The Earnings Wheel do not place trades for readers.</p>
   </div>
 </section>
 
