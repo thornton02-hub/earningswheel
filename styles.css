@@ -93,8 +93,9 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
 }
 
 /* weekly letter issue */
-.letter-masthead{display:block;width:100%;max-width:100%;height:auto;background:var(--navy);margin:0 0 var(--s3)}
+.letter-masthead{display:block;width:420px;max-width:100%;height:auto;background:var(--navy);margin:0 0 var(--s3)}
 .letter-byline{color:var(--muted);font-size:15px;margin:0 0 var(--s3)}
+.letter-head .letter-byline{margin-bottom:0}
 .letter-toc{margin:0 0 var(--s4)}
 .letter-toc ul{margin:0;padding-left:1.25rem}
 .letter-issue .caption{font-size:15px;color:var(--muted);margin:0 0 var(--s2)}
