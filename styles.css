@@ -116,3 +116,8 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
 
 /* watch-on-youtube links under video embeds */
 .watch-yt{margin:var(--s1) 0 0;font-size:15px;font-weight:600}
+
+/* Following One Covered Call on Videos — modest portrait embed */
+.video-portrait{aspect-ratio:9/16;max-width:320px;margin:var(--s3) 0 var(--s2)}
+.follow-list h3{font-size:22px;margin:var(--s2) 0 4px}
+.follow-list article + article{margin-top:var(--s4)}
