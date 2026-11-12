@@ -121,3 +121,10 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
 .video-portrait{aspect-ratio:9/16;max-width:320px;margin:var(--s3) 0 var(--s2)}
 .follow-list h3{font-size:22px;margin:var(--s2) 0 4px}
 .follow-list article + article{margin-top:var(--s4)}
+
+.follow-videos{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);margin-top:var(--s3);align-items:start}
+.follow-videos .video-portrait{margin-top:0;max-width:100%}
+@media (max-width:600px){
+  .follow-videos{grid-template-columns:1fr}
+  .follow-videos .video-portrait{max-width:320px}
+}
