@@ -128,3 +128,8 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
   .follow-videos{grid-template-columns:1fr}
   .follow-videos .video-portrait{max-width:320px}
 }
+
+/* Home: Substack signup for the weekly letter */
+.subscribe{margin-top:var(--s3)}
+.substack-embed{display:block;width:100%;max-width:480px;height:320px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.subscribe .note{margin-top:var(--s1)}
