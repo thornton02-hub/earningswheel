@@ -133,3 +133,8 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
 .subscribe{margin-top:var(--s3)}
 .substack-embed{display:block;width:100%;max-width:480px;height:320px;border:1px solid var(--line);border-radius:6px;background:#fff}
 .subscribe .note{margin-top:var(--s1)}
+
+/* Home: latest podcast episode */
+.podcast{margin-top:var(--s3)}
+.substack-podcast{display:block;width:100%;height:200px;border:0;background:transparent}
+.podcast .note{margin-top:var(--s1)}
