@@ -138,19 +138,19 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
 .podcast-card{padding:var(--s4);background:var(--tint);border:1px solid var(--line);border-radius:6px;overflow:hidden}
 .podcast-card h2{margin-top:0;margin-bottom:10px}
 .podcast-card .podcast-dek{margin:0 0 var(--s3)}
-.podcast-player{width:100%;max-width:390px;height:200px;border-radius:6px;overflow:hidden;background:var(--navy)}
-.podcast-player iframe{display:block;width:100%;height:200px;border:0;background:var(--navy)}
+/* Wide card: Substack uses a tall layout, so the iframe is taller than the
+   visible window and pinned to the bottom so the control row is fully visible
+   with padding, without the empty hero above or the Subscribe row below. */
+.podcast-player{width:100%;height:256px;border-radius:6px;overflow:hidden;background:var(--navy);position:relative}
+.podcast-player iframe{display:block;width:100%;height:456px;border:0;background:var(--navy);position:absolute;left:0;bottom:0}
 .podcast-actions{margin:var(--s3) 0 0}
-@media (min-width:600px){
-  .podcast-player{max-width:480px;height:240px}
-  .podcast-player iframe{height:240px}
+/* Narrower than Substack's tall layout (~600px player width) */
+@media (max-width:727px){
+  .podcast-player{height:336px}
+  .podcast-player iframe{position:static;height:336px}
 }
 @media (max-width:520px){
-  .podcast-card{padding:20px 0;margin-left:-1px;margin-right:-1px}
-  .podcast-card .eyebrow,
-  .podcast-card h2,
-  .podcast-card .podcast-dek,
-  .podcast-actions{padding-left:20px;padding-right:20px}
-  .podcast-player{width:350px;max-width:100%;height:200px;margin:0 auto;border-radius:0}
-  .podcast-player iframe{height:200px}
+  .podcast-card{padding:20px}
+  .podcast-player{container-type:inline-size;height:auto;aspect-ratio:350/204;position:relative}
+  .podcast-player iframe{position:absolute;left:0;top:0;bottom:auto;width:350px;max-width:none;height:204px;transform-origin:0 0;transform:scale(calc(100cqi / 350px))}
 }
