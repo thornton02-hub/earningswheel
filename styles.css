@@ -105,13 +105,18 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
 .letter-table{width:100%;border-collapse:collapse;font-size:15px;margin:0;min-width:28rem}
 .letter-table th,.letter-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
 .letter-table th{background:var(--tint);font-weight:600;color:var(--navy)}
-.letter-table .num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.letter-table th.num{text-align:right;font-variant-numeric:tabular-nums}
+.letter-table td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 .letter-issue hr{border:0;border-top:1px solid var(--line);margin:var(--s4) 0}
 .letter-issue .callout{margin:var(--s3) 0}
 .letter-issue .callout p:last-child{margin-bottom:0}
+.letter-issue ul{margin:0 0 var(--s3);padding-left:1.25rem}
+.letter-issue li{margin:0 0 .35em}
+.letter-issue li:last-child{margin-bottom:0}
+.letter-archive-title{font-size:clamp(28px,4vw,40px);margin:0 0 var(--s2)}
 @media (max-width:520px){
-  .letter-table{font-size:14px;min-width:24rem}
-  .letter-table th,.letter-table td{padding:6px 8px}
+  .letter-table{font-size:13px;min-width:0;width:100%}
+  .letter-table th,.letter-table td{padding:6px 6px}
 }
 
 /* watch-on-youtube links under video embeds */
