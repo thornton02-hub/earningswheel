@@ -159,3 +159,46 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
   .podcast-player{container-type:inline-size;height:auto;aspect-ratio:350/204;position:relative}
   .podcast-player iframe{position:absolute;left:0;top:0;bottom:auto;width:350px;max-width:none;height:204px;transform-origin:0 0;transform:scale(calc(100cqi / 350px))}
 }
+
+/* Covered Call Starter Checklist */
+.checklist{list-style:none;margin:0;padding:0}
+.checklist li{margin:0;padding:0;border-bottom:1px solid var(--line)}
+.checklist li:last-child{border-bottom:0}
+.check-item{display:flex;gap:14px;align-items:flex-start;padding:18px 0;cursor:pointer}
+.check-item input{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0
+}
+.tick{
+  flex:0 0 auto;width:22px;height:22px;margin-top:5px;border:2px solid var(--navy);border-radius:3px;background:#fff;
+  position:relative;print-color-adjust:exact;-webkit-print-color-adjust:exact
+}
+.check-item input:checked + .tick{background:var(--accent);border-color:var(--accent)}
+.check-item input:checked + .tick::after{
+  content:"";position:absolute;left:6px;top:1px;width:6px;height:11px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)
+}
+.check-item input:focus-visible + .tick{outline:2px solid var(--accent);outline-offset:2px}
+.check-text{min-width:0;flex:1}
+.check-text strong{display:block;font-family:var(--serif);font-weight:600;font-size:20px;color:var(--navy);line-height:1.3;margin:0 0 6px}
+.check-text .check-body{display:block;margin:0;color:var(--ink)}
+.checklist-promo{padding:var(--s4);background:var(--tint);border:1px solid var(--line);border-radius:6px}
+.checklist-promo h2{margin-top:0;margin-bottom:10px}
+.checklist-promo p:last-of-type{margin-bottom:0}
+.checklist-promo .actions{margin-top:var(--s3)}
+@media (max-width:520px){
+  .checklist-promo{padding:20px}
+  .check-text strong{font-size:18px}
+}
+
+@media print{
+  .site-header,.page-masthead,.actions,.subscribe,.subscribe-section,.site-footer .footer-meta{display:none !important}
+  .site-footer{margin-top:var(--s3);padding:var(--s3) 0 0;border-top:1px solid #ccc}
+  .page-head,.section,.hero{padding:0 !important}
+  .page-head + .section{padding-top:var(--s2) !important}
+  .page-head .lede{margin-bottom:var(--s2)}
+  a{color:inherit;text-decoration:none}
+  .check-item{padding:12px 0;cursor:default;break-inside:avoid;page-break-inside:avoid}
+  .tick{border-color:#000;background:#fff}
+  .check-item input:checked + .tick{background:#000;border-color:#000}
+  .callout{break-inside:avoid;background:#fff;border-left-color:#000;color:#000}
+  @page{margin:.6in}
+}
