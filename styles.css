@@ -202,3 +202,8 @@ figcaption{font-size:14px;color:var(--muted);margin-top:var(--s1)}
   .callout{break-inside:avoid;background:#fff;border-left-color:#000;color:#000}
   @page{margin:.6in}
 }
+.video-soon{display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.video-soon>div{display:flex;flex-direction:column;gap:6px}
+.soon-label{font-family:var(--serif);font-size:24px;font-weight:600;letter-spacing:.01em}
+.soon-ep{font-size:14px;color:#c9d3e0;text-transform:uppercase;letter-spacing:.08em}
+.lesson-summary{font-size:15px;margin:6px 0 0}
